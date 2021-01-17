@@ -1,0 +1,50 @@
+// Prevent Firefox Scrollbar Jump
+html
+  height: -webkit-fill-available
+  overflow-y: hidden
+
+body
+  // background: $tet-lightgrey
+  // font-size: $base-font-size*0.9
+  min-height: 100vh
+  min-height: -webkit-fill-available
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))
+  line-height: $base-line-height
+  font-family: Arial, Helvetica, sans-serif
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
+
+  @media #{$mc-xxlarge}
+    font-size: $base-font-size*1
+
+  @media #{$mq-small}
+    font-size: $base-font-size*0.8
+    line-height: $base-line-height*1.1
+
+  @media #{$mq-medium}
+    font-size: $base-font-size*0.9
+    line-height: $base-line-height*1.2
+
+  @media #{$mq-large}
+    font-size: $base-font-size*1.1
+
+  @media #{$mq-mlarge}
+    font-size: $base-font-size*1.2
+
+  @media #{$mq-xlarge}, #{$tq-medium}
+    font-size: $base-font-size*1.3
+
+  @media #{$mq-xxlarge}
+    font-size: $base-font-size*1.6
+
+  @media #{$mq-xxxlarge}
+    font-size: $base-font-size*2.4
+
+  @media #{$tq-large}
+    font-size: $base-font-size*2
+
+  @media #{$mc-large}
+    // font-size: $base-font-size*1.2
+
+  @media #{$mc-small}
+    // font-size: $base-font-size*1.1

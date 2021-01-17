@@ -1,0 +1,43 @@
+.the-grid
+  .grid-line
+    background: $js-grid-grey
+    // border: 2px solid blue
+    position: absolute
+    // top: 0
+
+  .line-horizontal
+    height: $regular-stroke
+    width: 100%
+
+  .line-vertical
+    width: $regular-stroke
+    height: 100%
+
+  .line-horizontal.line1
+    top: $double-module
+
+  .line-horizontal.line2
+    bottom: $double-module
+
+  .line-vertical.line3
+    top: 0
+    left: $double-module
+
+  .line-vertical.line4
+    top: 0
+    right: $double-module
+
+
+  @media #{$mc-xxxxlarge}
+
+    .line-horizontal.line1
+      top: $four-module
+
+    .line-horizontal.line2
+      bottom: $four-module
+
+    .line-vertical.line3
+      left: $four-module
+
+    .line-vertical.line4
+      right: $four-module
