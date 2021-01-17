@@ -3,7 +3,7 @@ highlighter: rouge
 encoding: utf-8
 exclude: ["node_modules", "files", "assets/css/main.scss", "assets/css/main.css", "gulpfile.js", "package.json", "package-lock.json", "npm-shrinkwrap.json", "debug.log", "README.md"]
 permalink: pretty
-baseurl: https://www.jeansoto.com
+baseurl: https://jeansoto7.github.io/mailerlite/
 # baseurl: ''
 # baseurl: C:/Users/jeanc/Websites/coming-soon-tetronian/_site
 # source: C:/Users/jeanc/Websites/coming-soon-tetronian/_site
