@@ -1,0 +1,111 @@
+.testimonials
+  position: relative
+  height: 100vh
+  display: flex
+  padding: 5% 5%
+  overflow: hidden
+  background: $mailer-mid-grey
+  // background: $mailer-green
+  background: white
+
+  .columns-testimonials
+    display: flex
+    flex-direction: row
+    justify-content: center
+    z-index: 2
+
+    h2
+
+    .testimonials-copy
+      // margin: $base-spacing*.3 0
+
+    .col-sm
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 0
+      height: 100%
+      max-height: 100%
+
+  .row-testimonials
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    background-color: $mailer-white
+    // border-radius: 2%
+    padding: $base-spacing*2 $base-spacing*2 $base-spacing*1.5 $base-spacing*2
+
+  .row-testimonials:before
+    content: ''
+    position: absolute
+    top: 0
+    z-index: 0
+    width: 100%
+    height: 100%
+    background-image: url('/assets/img/icons/quotes.svg')
+    background-repeat: no-repeat
+    background-position: 50% 41%
+    background-size: 40%
+    opacity: .3
+
+  .columns-testimonials-2
+    padding: 0 $base-spacing*2 !important
+
+  .testimonials-image
+    z-index: 2
+    position: absolute
+    top: -25%
+    border-radius: 50%
+    width: 27%
+    // object-fit: cover
+    // margin-bottom: $base-spacing*.5
+
+  .testimonials-info
+    z-index: 2
+    margin-top: $base-spacing*2
+
+    p
+      font-size: $base-spacing*.85
+
+    h4
+      margin-top: $base-spacing*.5
+      font-weight: bold
+      font-size: $base-spacing*1.2
+
+    h5
+      line-height: $base-spacing
+      font-size: $base-spacing*.7
+
+  .columns-testimonials-1
+    .row-testimonials
+      padding: $base-spacing*2 $base-spacing*2 $base-spacing $base-spacing*2
+
+    .testimonials-image
+      top: -25%
+      width: 18%
+
+    .testimonials-info
+      margin-top: $base-spacing*.8
+
+      p
+        font-size: $base-spacing*.7
+
+      h4
+        margin-top: $base-spacing*.4
+        font-size: $base-spacing*.9
+
+      h5
+        line-height: $base-spacing*.8
+        font-size: $base-spacing*.6
+
+    .testimonials-row-1
+      margin-bottom: 9%
+
+    .testimonials-row-2
+      margin-top: 9%
+
+    .row-testimonials:before
+      background-position: 50% 45%
+      background-size: 23%

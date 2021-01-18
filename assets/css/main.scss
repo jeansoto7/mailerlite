@@ -24,10 +24,11 @@ $output-bourbon-deprecation-warnings: false !default;
 
 
 // 2 - Modules
-// @import "2-modules/flex-video";
 
 // 4 - layouts
 @import "4-layouts/nav";
+@import "4-layouts/circles";
+@import "4-layouts/form";
 @import "4-layouts/footer";
 
 // 3 - Sections

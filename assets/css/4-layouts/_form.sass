@@ -1,0 +1,33 @@
+.form-display
+  display: flex
+
+  input[type="email"]
+    background: none
+    height: 100%
+    width: 100%
+    border: 2px solid $mailer-mid-grey
+    border-right: none
+    padding-left: $base-spacing
+
+  label
+    margin-left: $base-spacing*0.8
+
+.group-email
+  width: 70%
+
+.subscribe-button
+  width: 30%
+
+.mc-field-group
+  position: relative
+
+  label
+    +transform(translateY(-50%))
+    +position(absolute, 50% null null 0)
+    pointer-events: none
+    transition: all 0.3s ease-in-out
+
+  input:focus + label,
+  input.has-value + label
+    top: -$base-spacing*0.8
+    font-size: $base-spacing*0.6
