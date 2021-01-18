@@ -1,28 +1,71 @@
 .home-content
-  .top-text
-    img.construction-text(src="{{site.baseurl}}/assets/img/text/warning-construction-text.svg", title="construction-text", alt="construction-text")
-    //- p
-    //-   | Warning
-    //-   br
-    //-   | Portfolio website is
-    //-   br
-    //-   | under construction
   
-  .logo-jean-img
-    img.center-img-logo(src="{{site.baseurl}}/assets/img/jean-photos/jean-logo.png", title="jean-logo", alt="jean-logo")
+  a.nav(href="https://www.mailerlite.com/" target="_blank")
+    img.mailerlite-logo(src="{{site.baseurl}}/assets/img/logo/mailerlite-white.png", title="Mailerlite Logo", alt="mailerlite-logo")
   
-  //- span(style='color: red') A
-  //- | CK OVERFLOW
-  .container-button
-    ul
-      li
-        a.animated-arrow(href="{{site.baseurl}}/assets/portfolio.pdf" target="_blank")
-          span.the-arrow.-left
-            span.shaft
-          span.arrow-main
-            span.arrow-text View
-            span.arrow-text.red-text Portfolio
-            span.arrow-text PDF
-              //- | View Portfolio PDF
-            span.the-arrow.-right
-              span.shaft
+  .main-subscription
+    h2.heanding-1 Sign up for effective email marketing techniques
+    p.heading-info From mailerlite features and updates, email marketing, business, remote, team, etc. There’s always something new to learn and improve especially.
+    
+    .subscribe-form
+      #mc_embed_signup
+        form#mc-embedded-subscribe-form.validate(action="https://app.mailerlite.com/webforms/submit/w6j1g2", method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+          #mc_embed_signup_scroll
+            .form-display
+              .mc-field-group.group-email
+                input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+                label(for='mce-EMAIL') Your Email...
+              input#mc-embedded-subscribe.subscribe-button(type='submit', value='Sign Up Free', name='subscribe')
+            #mce-responses.clear
+              #mce-error-response.response(style='display:none')
+              #mce-success-response.response(style='display:none')
+            // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            div(style='position: absolute; left: -5000px;')
+              input(type='text', name='b_91a07fff81f4f893e42cbb5f9_1ed1137411', tabindex='-1', value='')
+  
+  .main-image
+    img.girl-image(src="{{site.baseurl}}/assets/img/people/girl-image-min.png", title="I Love My Job", alt="girl-laptop")
+  
+.circle-main
+
+
+
+
+
+
+  //- 
+  //- .row
+  //-   .col-sm
+  //-     | One of three columns
+  //-   .col-sm
+  //-     | One of three columns
+  //-   .col-sm
+  //-     | One of three columns
+
+
+
+
+
+
+
+
+      //- .home-content
+      //-   .top-text
+      //-     img.construction-text(src="{{site.baseurl}}/assets/img/text/warning-construction-text.svg", title="construction-text", alt="construction-text")
+      //- 
+      //-   .logo-jean-img
+      //-     img.center-img-logo(src="{{site.baseurl}}/assets/img/jean-photos/jean-logo.png", title="jean-logo", alt="jean-logo")
+      //- 
+      //-   .container-button
+      //-     ul
+      //-       li
+      //-         a.animated-arrow(href="{{site.baseurl}}/assets/portfolio.pdf" target="_blank")
+      //-           span.the-arrow.-left
+      //-             span.shaft
+      //-           span.arrow-main
+      //-             span.arrow-text View
+      //-             span.arrow-text.red-text Portfolio
+      //-             span.arrow-text PDF
+      //-             span.the-arrow.-right
+      //-               span.shaft
+      

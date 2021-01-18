@@ -8,7 +8,7 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "0-tools/neat/neat";
 @import "0-tools/bootstrap/bootstrap-grid"; //Choose which bootstrap pack you want, all are availble in 0-tools/bootstrap. Documentation here https://getbootstrap.com/docs/4.1/layout/overview/
 @import "0-tools/fonts";
-// @import "0-tools/normalize";
+@import "0-tools/normalize";
 @import "0-tools/color-vars";
 @import "0-tools/vars";
 
@@ -28,12 +28,13 @@ $output-bourbon-deprecation-warnings: false !default;
 
 // 4 - layouts
 @import "4-layouts/nav";
-@import "4-layouts/lines";
-@import "4-layouts/center-content";
+@import "4-layouts/footer";
 
 // 3 - Sections
 @import "3-sections/home";
-@import "3-sections/js-button";
+@import "3-sections/benefits";
+@import "3-sections/articles";
+@import "3-sections/testimonials";
 
 // Font Awesome
 // @import "0-tools/fontawesome/fontawesome";

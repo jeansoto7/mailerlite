@@ -1,73 +1,114 @@
 .home-content
-  display: flex
-  width: 100%
-  height: 100%
-  justify-content: space-between
-  // align-items: center
   position: relative
+  height: 100vh
+  display: flex
+  padding: 2% 5% 0 5%
+  // overflow: hidden
+  // padding: 2% 5%
+  background: $mailer-green
+  background-image: linear-gradient(to bottom right, $mailer-green 50%, $mailer-dark-green)
 
-  .top-text
-    // align-items: flex-start
+  .main-subscription, .main-image
+    // padding: 0 1%
+    z-index: 2
+    // margin: 1%
 
-    .construction-text
-      width: 50vmin
+  .main-subscription
+    margin-right: $base-spacing
+    // margin-top: 3%
+    width: 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // margin: 8% 2% 0 0
 
-  .logo-jean-img
-    // align-items: center
-    width: 75vmin
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-    // left: 50%
-    // margin-left: -50%
-    // top: 50%
-    // margin-top: -50%
+    .heanding-1
+      // font-size: 3.5vw
+      font-size: 3.6em
+      // width: 100%
+      font-weight: bold
+      line-height: $base-spacing*1.2
+      margin-bottom: $base-spacing*0.3
 
-    .center-img-logo
+    .heading-info
+      margin-bottom: $base-spacing*1.7
+
+    // .subscribe-form
+    //   margin-bottom: $base-spacing*0.3
+
+  .main-image
+    width: 50%
+    height: 100%
+    margin-left: $base-spacing
+
+    .girl-image
+      margin-left: 5%
+      // position: absolute
+      height: 100%
+      // width: 100%
+
+  // .circle-main
+  //     // background-color: #fff
+  //     position: absolute
+  //     top: -35%
+  //     left: 5%
+  //     z-index: 0
+  //     border: 30vw solid #FAFAFA
+  //     border-radius: 50%
+  //     height: 150vw
+  //     width: 150vw
+
+
+  // --------------------------------------------------Subscribe Forms
+
+  // .subscribe-form
+    // width: 100%
+
+  .form-display
+    display: flex
+    // height: 5%
+    // align-items: flex-end
+
+    input[type="email"]
+      // padding-left: $base-spacing
+      background: none
+      height: 100%
       width: 100%
+      // height: $base-spacing*2
+      // width: 100%
+      border: 2px solid $mailer-mid-grey
+      border-right: none
 
-@media #{$mc-xxxxlarge}
-  .home-content
-    // justify-content: center
+    label
+      margin-left: $base-spacing*0.8
 
-    .top-text
-      position: absolute
-      left: 50%
-      transform: translateX(-50%)
-      // margin-top: $base-spacing*2
+    input[type="submit"]
+      background: $mailer-button-blue
+      &:hover
+        background: $mailer-dark-grey
 
-      .construction-text
-        width: 40vmin
+  .group-email
+    width: 70%
 
-    .logo-jean-img
-      width: 50vmin
+  .subscribe-button
+    width: 30%
+    height: $base-spacing*4
+    color: $mailer-white
+    // height: 100%
+    border: none
 
-@media #{$mq-medium}
-  .home-content
-    .top-text
-      .construction-text
-        width: 40vmin
+  .mc-field-group
+    position: relative
 
-@media #{$mc-mmedium}
-  .home-content
-    .top-text
-      .construction-text
-        width: 50vmin
+    label
+      +transform(translateY(-50%))
+      +position(absolute, 50% null null 0)
+      // font:
+      //   style: italic
+      pointer-events: none
+      transition: all 0.3s ease-in-out
 
-    .logo-jean-img
-      width: 70vmin
-
-@media #{$mq-small}
-
-@media #{$mq-medium}
-
-@media #{$mq-large}
-
-@media #{$mq-mlarge}
-
-@media #{$tq-large}
-
-@media #{$mc-large}
-
-@media #{$mc-small}
+    input:focus + label,
+    input.has-value + label
+      top: -$base-spacing*0.8
+      font-size: $base-spacing*0.6
