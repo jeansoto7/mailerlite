@@ -1,8 +1,24 @@
 .articles
-  .row
-    .col-sm
-      | One of three columns
-    .col-sm
-      | One of three columns
-    .col-sm
-      | One of three columns
+  .row.columns-articles
+    .col-sm.columns-articles-1
+      h2.articles-title Latest newsletters
+      p.articles-copy From mailerlite features and updates, email marketing, business, remote, team, etc. There’s always something new to learn and improve especially.
+      button.button-article(onclick='window.location="#subscribe"') Sign Up
+      
+    .col-sm.columns-articles-2
+      img.articles-image(src="{{site.baseurl}}/assets/img/people/article-1.jpg", title="Newsletters Image", alt="article-1")
+      .articles-info
+        h3 The guide to living creatively
+        p From mailerlite features and updates, email marketing, business, remote, team, etc. There’s always something new to learn and improve especially. 
+    
+    .col-sm.columns-articles-3
+      .row-articles.article-row-1
+        img.articles-image(src="{{site.baseurl}}/assets/img/people/article-1.jpg", title="Newsletters Image", alt="article-1")
+        .articles-info
+          h5.article-category Category
+          h3 The guide to living creatively
+      .row-articles.article-row-2
+        img.articles-image(src="{{site.baseurl}}/assets/img/people/article-1.jpg", title="Newsletters Image", alt="article-1")
+        .articles-info
+          h5.article-category Category
+          h3 The guide to living creatively
