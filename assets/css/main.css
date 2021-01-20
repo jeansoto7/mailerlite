@@ -3604,7 +3604,6 @@ body {
 @media (max-width: 40.625em) {
   .home-content {
     text-align: center;
-    border: 2px solid red;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
@@ -3681,9 +3680,6 @@ body {
 }
 
 @media (max-width: 25em) {
-  .home-content {
-    border: 2px solid blue;
-  }
   .home-content .main-subscription {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -3713,9 +3709,6 @@ body {
 }
 
 @media (max-width: 19em) {
-  .home-content {
-    border: 2px solid pink;
-  }
   .home-content .main-subscription .heanding-1 {
     font-size: 1.5em;
     line-height: 1.1em;
