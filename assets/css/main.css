@@ -3564,8 +3564,8 @@ body {
   width: 50%;
   height: 100%;
   margin-left: 1em;
-  -webkit-animation: image-fade-slide 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: image-fade-slide 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: image-fade-slide 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: image-fade-slide 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .home-content .main-image .girl-image {
