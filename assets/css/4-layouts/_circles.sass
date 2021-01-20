@@ -7,11 +7,16 @@
 
 .circle-main
   border: 30vw solid $mailer-white
+  // border: 60vmin solid $mailer-white
+  opacity: .7
   top: -40%
   left: 5%
   height: 135vw
   width: 135vw
-  opacity: .8
+  min-height: 1800px
+  min-width: 1800px
+  // height: 270vmin
+  // width: 270vmin
   // animation: home-cirlce-fade 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
 
 
@@ -67,3 +72,37 @@
 .articles-overlay
   background: $mailerlite-articles-overlay
   opacity: 0.8
+
+
+@media (max-height: 650px)
+  .circle-main
+    // border: 2px solid blue
+    // border: 30vw solid $mailer-white
+    top: -80%
+    left: 20%
+    height: 120vw
+    width: 120vw
+
+
+// @media (max-height: 550px)
+//   .circle-main
+//     // border: 2px solid blue
+//     // border: 30vw solid $mailer-white
+//     top: -80%
+//     left: 25%
+//     height: 110vw
+//     width: 110vw
+
+@media #{$mc-large}
+  .circle-main
+    border: 50vw solid $mailer-white
+
+
+
+
+
+
+
+
+
+//

@@ -2919,19 +2919,6 @@ body {
   }
 }
 
-@media (min-width: 64em) {
-  body {
-    font-size: 0.9em;
-    line-height: 1.8;
-  }
-}
-
-@media (min-width: 85.375em) {
-  body {
-    font-size: 1.1em;
-  }
-}
-
 @media (min-width: 100em) {
   body {
     font-size: 1.2em;
@@ -2959,18 +2946,6 @@ body {
 @media (min-device-width: 100em) and (max-device-width: 160em) and (orientation: portrait) {
   body {
     font-size: 2em;
-  }
-}
-
-@media (max-width: 40.625em) {
-  body {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 28.125em) {
-  body {
-    font-size: 1.1em;
   }
 }
 
@@ -3115,12 +3090,12 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 4em;
-  padding: 0 1.7em;
+  height: 3.5em;
+  padding: 0 1.5em;
   text-align: center;
-  font-size: 0.76923em;
+  font-size: 0.7em;
   font-weight: 400;
-  letter-spacing: 0.14286em;
+  letter-spacing: 0.1em;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
@@ -3213,19 +3188,7 @@ body {
 
 .home-content, .benefits, .articles, .testimonials, .footer {
   pointer-events: all;
-}
-
-.nav {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  pointer-events: none;
-}
-
-.nav img {
-  pointer-events: all;
-  z-index: 100;
-  width: 10%;
+  min-height: 500px;
 }
 
 .circle-all {
@@ -3237,11 +3200,13 @@ body {
 
 .circle-main {
   border: 30vw solid #FAFAFA;
+  opacity: .7;
   top: -40%;
   left: 5%;
   height: 135vw;
   width: 135vw;
-  opacity: .8;
+  min-height: 1800px;
+  min-width: 1800px;
 }
 
 .circle-benefits {
@@ -3305,6 +3270,21 @@ body {
   opacity: 0.8;
 }
 
+@media (max-height: 650px) {
+  .circle-main {
+    top: -80%;
+    left: 20%;
+    height: 120vw;
+    width: 120vw;
+  }
+}
+
+@media (max-width: 40.625em) {
+  .circle-main {
+    border: 50vw solid #FAFAFA;
+  }
+}
+
 .form-display {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3315,13 +3295,14 @@ body {
   background: none;
   height: 100%;
   width: 100%;
-  border: 2px solid #888888;
+  border: 2px solid #292C31;
   border-right: none;
   padding-left: 1em;
 }
 
 .form-display label {
   margin-left: 0.8em;
+  font-size: 0.9em;
 }
 
 .group-email {
@@ -3528,6 +3509,25 @@ body {
   padding: 2% 5% 0 5%;
   background: #21C16C;
   background-image: linear-gradient(to bottom right, #21C16C 30%, #0D3720);
+  min-height: 600px;
+}
+
+.home-content .logo-normal {
+  display: none;
+}
+
+.home-content .nav {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  pointer-events: none;
+}
+
+.home-content .nav img {
+  pointer-events: all;
+  z-index: 100;
+  height: 6vh;
+  min-height: 29px;
 }
 
 .home-content .main-subscription, .home-content .main-image {
@@ -3551,14 +3551,16 @@ body {
 }
 
 .home-content .main-subscription .heanding-1 {
-  font-size: 4em;
+  font-size: 3.4em;
   font-weight: bold;
-  line-height: 1.2em;
-  margin-bottom: 0.3em;
+  line-height: 1.1em;
+  margin-bottom: 3vh;
 }
 
 .home-content .main-subscription .heading-info {
-  margin-bottom: 1.7em;
+  margin-bottom: 3vh;
+  font-size: 0.9em;
+  line-height: 1.6em;
 }
 
 .home-content .main-image {
@@ -3572,6 +3574,169 @@ body {
 .home-content .main-image .girl-image {
   margin-left: 5%;
   height: 100%;
+}
+
+@media (max-height: 600px) {
+  .home-content .main-subscription {
+    width: 65%;
+  }
+  .home-content .main-image {
+    width: 35%;
+  }
+}
+
+@media (max-width: 64em) {
+  .home-content .main-subscription {
+    width: 60%;
+  }
+  .home-content .main-image {
+    width: 30%;
+    margin-left: -5%;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .home-content .main-image {
+    margin-left: -7%;
+  }
+}
+
+@media (max-width: 40.625em) {
+  .home-content {
+    text-align: center;
+    border: 2px solid red;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2% 7% 0 7%;
+  }
+  .home-content .logo-white {
+    display: none;
+  }
+  .home-content .logo-normal {
+    display: inline;
+  }
+  .home-content .nav {
+    left: 0;
+  }
+  .home-content .nav img {
+    height: 3.5vh;
+  }
+  .home-content .main-subscription {
+    width: 100%;
+    height: 35%;
+    margin-top: 8%;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .home-content .main-subscription .heanding-1 {
+    font-size: 2.2em;
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+  }
+  .home-content .main-subscription .heading-info {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .home-content .main-image {
+    width: 100%;
+    height: 55%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-content .subscribe-button {
+    height: 3em;
+  }
+}
+
+@media (max-width: 31.25em) {
+  .home-content .main-subscription {
+    height: 40%;
+  }
+  .home-content .main-subscription .heanding-1 {
+    font-size: 1.9em;
+    line-height: 1.1em;
+    margin-bottom: 0.4em;
+  }
+  .home-content .main-image {
+    height: 50%;
+  }
+  .home-content .group-email {
+    width: 60%;
+    font-size: 0.8em;
+  }
+  .home-content .subscribe-button {
+    width: 40%;
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 25em) {
+  .home-content {
+    border: 2px solid blue;
+  }
+  .home-content .main-subscription {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15%;
+  }
+  .home-content .main-subscription .heanding-1 {
+    font-size: 1.7em;
+    line-height: 1.1em;
+    margin-bottom: 0.4em;
+  }
+  .home-content .main-subscription .heading-info {
+    font-size: 0.7em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 25em) {
+  .home-content .main-subscription {
+    height: 45%;
+    padding-bottom: 0;
+  }
+  .home-content .main-image {
+    height: 45%;
+  }
+}
+
+@media (max-width: 19em) {
+  .home-content {
+    border: 2px solid pink;
+  }
+  .home-content .main-subscription .heanding-1 {
+    font-size: 1.5em;
+    line-height: 1.1em;
+    margin-bottom: 0.4em;
+  }
+  .home-content .main-subscription .heading-info {
+    font-size: 0.65em;
+    line-height: 1.3em;
+    margin-bottom: 1.4em;
+  }
+  .home-content .main-image {
+    height: 48%;
+  }
+  .home-content .group-email {
+    width: 50%;
+    font-size: 0.7em;
+  }
+  .home-content .subscribe-button {
+    width: 50%;
+    font-size: 0.6em;
+  }
 }
 
 .benefits {

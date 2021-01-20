@@ -7,6 +7,31 @@
   // padding: 2% 5%
   background: $mailer-green
   background-image: linear-gradient(to bottom right, $mailer-green 30%, $mailer-dark-green)
+  min-height: 600px
+
+  .logo-normal
+    display: none
+
+  .nav
+    position: absolute
+    // padding: 0 5%
+    z-index: 100
+    // position: absolute
+    // height: 10%
+    width: 100%
+    // display: block
+    pointer-events: none
+    // max-width: 100%
+    // border: 2px solid blue
+
+    img
+      // margin-top: 2%
+      // z-index: 2
+      pointer-events: all
+      z-index: 100
+      // width: 10%
+      height: 6vh
+      min-height: 29px
 
   .main-subscription, .main-image
     // padding: 0 1%
@@ -24,18 +49,20 @@
     // margin: 8% 2% 0 0
 
     .heanding-1
-      // font-size: 3.5vw
-      font-size: 4em
+      // font-size: 9vh
+      font-size: $base-spacing*3.4
       // width: 100%
       font-weight: bold
-      line-height: $base-spacing*1.2
-      margin-bottom: $base-spacing*0.3
+      line-height: $base-spacing*1.1
+      // margin-bottom: $base-spacing*0.3
+      margin-bottom: 3vh
 
     .heading-info
-      margin-bottom: $base-spacing*1.7
+      // margin-bottom: $base-spacing*1.5
+      margin-bottom: 3vh
+      font-size: $base-spacing*.9
+      line-height: $base-spacing*1.6
 
-    // .subscribe-form
-    //   margin-bottom: $base-spacing*0.3
 
   .main-image
     width: 50%
@@ -47,3 +74,232 @@
       margin-left: 5%
       // position: absolute
       height: 100%
+
+
+@media (max-height: 600px)
+  .home-content
+
+    .main-subscription
+      width: 65%
+
+    .main-image
+      // display: flex
+      // justify-content: center
+      width: 35%
+
+@media #{$wmq-medium}
+  .home-content
+
+    .main-subscription
+      width: 60%
+
+    .main-image
+      width: 30%
+      margin-left: -5%
+      // display: flex
+      // justify-content: flex-start
+
+@media #{$mc-xlarge}
+  .home-content
+
+    .main-image
+      margin-left: -7%
+
+@media #{$mc-large}
+  .home-content
+    text-align: center
+    border: 2px solid red
+    flex-direction: column
+    padding: 2% 7% 0 7%
+
+    .logo-white
+      display: none
+
+    .logo-normal
+      display: inline
+
+    .nav
+      left: 0
+
+      img
+        height: 3.5vh
+
+    .main-subscription
+      width: 100%
+      height: 35%
+      margin-top: 8%
+      justify-content: flex-end
+
+      .heanding-1
+        font-size: $base-spacing*2.2
+        line-height: $base-spacing*1.2
+        margin-bottom: $base-spacing*.2
+
+      .heading-info
+        font-size: $base-spacing*.8
+        line-height: $base-spacing*1.5
+        margin-bottom: $base-spacing*1.5
+
+    .main-image
+      width: 100%
+      height: 55%
+      right: 0
+      bottom: 0
+      position: absolute
+      display: flex
+      justify-content: center
+
+      .girl-image
+
+    .subscribe-button
+      height: $base-spacing*3
+      // padding: 0 $base-spacing*1.4
+      // font-size: $base-spacing*.7
+
+@media #{$mc-medium}
+  .home-content
+
+    .main-subscription
+      height: 40%
+
+      .heanding-1
+        font-size: $base-spacing*1.9
+        line-height: $base-spacing*1.1
+        margin-bottom: $base-spacing*.4
+
+      .heading-info
+        // font-size: $base-spacing*.8
+        // line-height: $base-spacing*1.5
+        // margin-bottom: $base-spacing*1.2
+
+    .main-image
+      height: 50%
+
+    .group-email
+      width: 60%
+      font-size: $base-spacing*.8
+
+    .subscribe-button
+      width: 40%
+      font-size: $base-spacing*.65
+
+@media #{$mc-jsmall}
+  .home-content
+    border: 2px solid blue
+
+    .main-subscription
+      // height: 35%
+      justify-content: center
+      margin-top: 15%
+      // padding-bottom: 5%
+      // margin-top: 1%
+
+      .heanding-1
+        font-size: $base-spacing*1.7
+        line-height: $base-spacing*1.1
+        margin-bottom: $base-spacing*.4
+
+      .heading-info
+        font-size: $base-spacing*.7
+        line-height: $base-spacing*1.5
+        margin-bottom: $base-spacing*1.5
+
+    .main-image
+      // height: 55%
+
+@media #{$mc-jsmall}
+  .home-content
+
+    .main-subscription
+      height: 45%
+      // justify-content: center
+      padding-bottom: 0
+      // margin-top: 1%
+
+      // .heanding-1
+      //   font-size: $base-spacing*1.7
+      //   line-height: $base-spacing*1.1
+      //   margin-bottom: $base-spacing*.4
+      //
+      // .heading-info
+      //   font-size: $base-spacing*.7
+      //   line-height: $base-spacing*1.5
+      //   margin-bottom: $base-spacing*1.5
+
+    .main-image
+      height: 45%
+
+@media #{$mc-bsmall}
+  .home-content
+    border: 2px solid pink
+
+    .main-subscription
+
+      .heanding-1
+        font-size: $base-spacing*1.5
+        line-height: $base-spacing*1.1
+        margin-bottom: $base-spacing*.4
+
+      .heading-info
+        font-size: $base-spacing*.65
+        line-height: $base-spacing*1.3
+        margin-bottom: $base-spacing*1.4
+
+    .main-image
+      height: 48%
+
+    .group-email
+      width: 50%
+      font-size: $base-spacing*.7
+
+    .subscribe-button
+      width: 50%
+      font-size: $base-spacing*.6
+
+
+
+
+// @media (max-height: 400px)
+  // .home-content
+  //
+  //   .main-subscription
+  //
+  //     .heanding-1
+  //       font-size: $base-spacing*2.7
+  //       line-height: $base-spacing*1.1
+  //
+  //     .heading-info
+  //       font-size: $base-spacing*.8
+  //       line-height: $base-spacing*1.4
+  //
+  //   .main-image
+  //     // width: 50%
+  //     // height: 120%
+  //     overflow: hidden
+  //     border: 2px solid blue
+  //     height: 105%
+  //     margin-top: -5vh
+  //
+  //     .girl-image
+  //       height: 110%
+  //
+  //   .subscribe-form
+  //     border: 2px solid blue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
