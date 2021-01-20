@@ -31,7 +31,9 @@ $output-bourbon-deprecation-warnings: false !default;
 @import "4-layouts/form";
 @import "4-layouts/footer";
 
+
 // 3 - Sections
+@import "3-sections/animation";
 @import "3-sections/home";
 @import "3-sections/benefits";
 @import "3-sections/articles";

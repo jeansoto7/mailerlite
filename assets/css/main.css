@@ -3219,7 +3219,6 @@ body {
   z-index: 100;
   width: 100%;
   pointer-events: none;
-  max-width: 100%;
 }
 
 .nav img {
@@ -3467,6 +3466,58 @@ body {
   }
 }
 
+@-webkit-keyframes image-fade-slide {
+  0% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes image-fade-slide {
+  0% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes home-container-fade-slide {
+  0% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes home-container-fade-slide {
+  0% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 .home-content {
   position: relative;
   height: 100vh;
@@ -3494,6 +3545,8 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: home-container-fade-slide 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: home-container-fade-slide 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .home-content .main-subscription .heanding-1 {
@@ -3511,6 +3564,8 @@ body {
   width: 50%;
   height: 100%;
   margin-left: 1em;
+  -webkit-animation: image-fade-slide 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: image-fade-slide 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .home-content .main-image .girl-image {

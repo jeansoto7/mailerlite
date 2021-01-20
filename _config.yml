@@ -5,5 +5,3 @@ exclude: ["node_modules", "files", "assets/css/main.scss", "assets/css/main.css"
 permalink: pretty
 baseurl: https://jeansoto7.github.io/mailerlite/
 # baseurl: ''
-# baseurl: C:/Users/jeanc/Websites/coming-soon-tetronian/_site
-# source: C:/Users/jeanc/Websites/coming-soon-tetronian/_site
