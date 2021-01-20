@@ -1,28 +1,37 @@
 .footer
   .form-title
-    h2 We send it to more than 300,000 subscribers and the number is growing each week. 
+    h2 Still not convinced?
+    //- h3 Make sure to visit our website & see our products to help you create email marketing your way.
+    h3
+      | Make sure to visit our 
+      a.color-change-footer(href='https://www.mailerlite.com/', target='_blank') website
+      |  & see our products to create email marketing your way.
 
-  .subscribe-form
-    #mc_embed_signup
-      form#mc-embedded-subscribe-form.validate(action="https://app.mailerlite.com/webforms/submit/w6j1g2", method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-        #mc_embed_signup_scroll
-          .form-display
-            .mc-field-group.group-email
-              input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
-              label(for='mce-EMAIL') Your Email...
-            input#mc-embedded-subscribe.subscribe-button(type='submit', value='Sign Up Free', name='subscribe')
-          #mce-responses.clear
-            #mce-error-response.response(style='display:none')
-            #mce-success-response.response(style='display:none')
-          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
-          div(style='position: absolute; left: -5000px;')
-            input(type='text', name='w6j1g2', tabindex='-1', value='')
+  //- .subscribe-form
+  //-   #mc_embed_signup
+  //-     form#mc-embedded-subscribe-form.validate(action="https://app.mailerlite.com/webforms/submit/w6j1g2", method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+  //-       #mc_embed_signup_scroll
+  //-         .form-display
+  //-           .mc-field-group.group-email
+  //-             input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
+  //-             label(for='mce-EMAIL') Your Email...
+  //-           input#mc-embedded-subscribe.subscribe-button(type='submit', value='Sign Up Free', name='subscribe')
+  //-         #mce-responses.clear
+  //-           #mce-error-response.response(style='display:none')
+  //-           #mce-success-response.response(style='display:none')
+  //-         // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+  //-         div(style='position: absolute; left: -5000px;')
+  //-           input(type='text', name='w6j1g2', tabindex='-1', value='')
             
   .copyright
     p 
-      | 2010 - 2021 &copy; 
-      a(target="_blank" href="https://www.mailerlite.com") MailerLite
-      | . All rights reserved.
+      | 2010 - 2021 &copy; MailerLite. All rights reserved.
+  
+  //- .c.copyright
+  //-   p 
+  //-     | 2010 - 2021 &copy; 
+  //-     a(target="_blank" href="https://www.mailerlite.com") MailerLite
+  //-     | . All rights reserved.
       
   //- .social-media
   //-   .grid-item

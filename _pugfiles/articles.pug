@@ -1,30 +1,42 @@
 .articles
   .row.columns-articles
     .col-sm.columns-articles-1
-      h2.articles-title Latest newsletters
-      p.articles-copy From mailerlite features and updates, email marketing, business, remote, team, etc. There’s always something new to learn and improve especially.
-      button.button-article(onclick='window.location="#subscribe"') Sign Up
+      h2.articles-title Latest Newsletters
+      p
+        | Here you can see previews of our most recent newsletters. 
+        a.sign-up-button(href='#subscribe') Sign up
+        |  to stay up to date, it’s free.
+      //- p.articles-copy Here you can see previews of our most recent newsletters. Sign up to stay up to date, it’s free.
+      //- button.button-article(onclick='window.location="#subscribe"') Sign Up
       
     .col-sm.columns-articles-2
-      img.articles-image(src="{{site.baseurl}}/assets/img/people/article-1.jpg", title="Newsletters Image", alt="article-1")
+      .articles-image-box
+        img.articles-image(src="https://www.mailerlite.com/img/containers/main/blog/cover-email-coupons.jpg/d709754c5c9d0974b044e880c71a9733.jpg", title="Newsletters Image", alt="article-1")
       .articles-info
-        h3 The guide to living creatively
-        p From mailerlite features and updates, email marketing, business, remote, team, etc. There’s always something new to learn and improve especially. 
+        h5.article-category Mailerlite Updates
+        h3 Say hello to our new interactive email blocks
+        p Our new interactive features have arrived, and they're here to help you stand out from the crowd! 
     
     .col-sm.columns-articles-3
       .row-articles.article-row-1
-        img.articles-image(src="{{site.baseurl}}/assets/img/people/article-1.jpg", title="Newsletters Image", alt="article-1")
-        .articles-info
-          h5.article-category Category
-          h3 The guide to living creatively
+        .white-article
+          .articles-image-box
+            img.articles-image(src="https://www.mailerlite.com/img/containers/main/blog/trends-for-2021-cover.jpg/8131e1ca427d2ba0b7276e3ccb0ddc7a.jpg", title="Newsletters Image", alt="article-1")
+          .articles-info
+            h5.article-category Trends
+            h3 5 email marketing trends to help you plan 2021 campaigns
       .row-articles.article-row-2
-        img.articles-image(src="{{site.baseurl}}/assets/img/people/article-1.jpg", title="Newsletters Image", alt="article-1")
-        .articles-info
-          h5.article-category Category
-          h3 The guide to living creatively
+        .white-article
+          .articles-image-box
+            img.articles-image(src="https://www.mailerlite.com/img/containers/main/blog/cover-video-in-newsletters-1571148525.gif/c76f804382bd39a7a33a2666a948fbf9.gif", title="Newsletters Image", alt="article-2")
+          .articles-info
+            h5.article-category Tips
+            h3 Why you should use video in your newsletters
 
   .circle-all.circle-articles.first-circle
   
   .circle-all.circle-articles.second-circle
   
-  //- .articles-overlay
+  .overlay-div.articles-overlay
+  
+  

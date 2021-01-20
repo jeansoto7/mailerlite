@@ -9,13 +9,9 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  color: $mailer-white
 
-  h2
-    color: $mailer-white
-
-  .subscribe-form
-    width: 50%
+  // .subscribe-form
+  //   width: 50%
 
   .copyright
     position: absolute
@@ -27,23 +23,51 @@
       font-size: $base-spacing*.8
 
     a
-      border-bottom: 1px solid $mailer-mid-grey
+      // border-bottom: 1px solid $mailer-mid-grey
       font-size: $base-spacing
       &:hover, &:active, &:focus
         color: $mailer-mid-grey
 
   .form-title
     margin-bottom: $base-spacing*2
-    h2
-      font-size: $base-spacing*1.3
-      font-weight: 500
-      text-align: center
-      margin: 0 $base-spacing/2
 
-  .form-display
-    input[type="submit"]
-      &:hover
-        background: $mailer-mid-grey
+    h2, h3, a
+      color: $mailer-white
+
+    h2
+      font-size: $base-spacing*1.7
+      font-weight: 700
+      text-align: center
+      margin: 0 $base-spacing/2 $base-spacing/4 $base-spacing/2
+      // margin-bottom: $base-spacing/2
+
+    h3
+      font-size: $base-spacing
+      color: $mailer-mid-grey
+
+    a
+      position: relative
+      color: $mailer-white
+      font-weight: bold
+      // border-bottom: 2px solid $mailer-dark-grey
+
+    a:hover
+      color: $mailer-green
+
+    a::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 0
+        left: 0
+        bottom: -$base-spacing*.3
+        border-bottom: 2px solid $mailer-white
+
+
+  // .form-display
+  //   input[type="submit"]
+  //     &:hover
+  //       background: $mailer-mid-grey
 
   // .social-media
   //   align-items: center
@@ -97,48 +121,48 @@
     height: 500px
     text-align: center
 
-    .subscribe-form
-      width: 100%
-
-    .form-title
-      margin-bottom: 25px
-
-    .form-display
-      margin: 0 $base-spacing
-      flex-direction: column
-
-      input[type="text"],
-      input[type="email"]
-        height: $base-spacing*2
-
-      input[type="text"]
-        margin-bottom: $base-spacing
-
-    .group-text, .group-email
-      width: 100%
-
-    .subscribe-button
-      margin: auto
-      width: 50%
-      margin-top: $base-spacing*3
-
-    .social-media
-      margin-top: $base-spacing*2
-
-    .mc-field-group
-      margin: 0
-
-      &:first-child
-        margin-bottom: $base-spacing
-
-        label
-          padding-bottom: 15px
-
-      label
-        width: 100%
-        text-align: center
-
-      input:focus + label,
-      input.has-value + label
-        top: -5px
-        padding: 0
+    // .subscribe-form
+    //   width: 100%
+    //
+    // .form-title
+    //   margin-bottom: 25px
+    //
+    // .form-display
+    //   margin: 0 $base-spacing
+    //   flex-direction: column
+    //
+    //   input[type="text"],
+    //   input[type="email"]
+    //     height: $base-spacing*2
+    //
+    //   input[type="text"]
+    //     margin-bottom: $base-spacing
+    //
+    // .group-text, .group-email
+    //   width: 100%
+    //
+    // .subscribe-button
+    //   margin: auto
+    //   width: 50%
+    //   margin-top: $base-spacing*3
+    //
+    // .social-media
+    //   margin-top: $base-spacing*2
+    //
+    // .mc-field-group
+    //   margin: 0
+    //
+    //   &:first-child
+    //     margin-bottom: $base-spacing
+    //
+    //     label
+    //       padding-bottom: 15px
+    //
+    //   label
+    //     width: 100%
+    //     text-align: center
+    //
+    //   input:focus + label,
+    //   input.has-value + label
+    //     top: -5px
+    //     padding: 0
