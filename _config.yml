@@ -4,5 +4,4 @@ encoding: utf-8
 exclude: ["node_modules", "files", "assets/css/main.scss", "assets/css/main.css", "gulpfile.js", "package.json", "package-lock.json", "npm-shrinkwrap.json", "debug.log", "README.md"]
 permalink: pretty
 baseurl: https://jeansoto7.github.io/mailerlite/
-# baseurl: /
 # baseurl: ''

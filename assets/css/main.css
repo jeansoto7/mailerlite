@@ -2892,6 +2892,7 @@ html, body {
 html {
   height: -webkit-fill-available;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -3878,7 +3879,7 @@ body {
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/img/icons/quotes.svg");
+  background-image: url("../../assets/img/icons/quotes.svg");
   background-repeat: no-repeat;
   background-position: 50% 41%;
   background-size: 40%;
