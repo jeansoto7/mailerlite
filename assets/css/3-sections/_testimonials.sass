@@ -3,16 +3,19 @@
   height: 100vh
   display: flex
   padding: 5% 5%
-  overflow: hidden
-  background: $mailer-mid-grey
+  // overflow: hidden
+  // background: $mailer-mid-grey
   // background: $mailer-green
   background: white
+  min-height: 700px
 
   .columns-testimonials
     display: flex
     flex-direction: row
     justify-content: center
+    flex: wrap
     z-index: 2
+    width: 100%
 
     h2
       font-weight: bold
@@ -23,13 +26,13 @@
     // .testimonials-copy
       // margin: $base-spacing*.3 0
 
-    .col-sm
-      display: flex
-      flex-direction: column
-      justify-content: center
-      padding: 0
-      height: 100%
-      max-height: 100%
+  .col-testimonials
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0
+    // height: 100%
+    // max-height: 100%
 
   .row-testimonials
     position: relative
@@ -37,7 +40,7 @@
     flex-direction: column
     align-items: center
     text-align: center
-    background-color: $mailer-white
+    background-color: #f1f1f1
     // border-radius: 2%
     padding: $base-spacing*2 $base-spacing*2 $base-spacing*1.5 $base-spacing*2
 
@@ -52,8 +55,8 @@
     // background-image: url('/assets/img/icons/quotes.svg')
     background-image: url('https://jeansoto7.github.io/mailerlite/assets/img/icons/quotes.svg')
     background-repeat: no-repeat
-    background-position: 50% 41%
-    background-size: 40%
+    background-position: 50% 45%
+    background-size: 27%
     opacity: .3
 
   .columns-testimonials-2
@@ -62,9 +65,9 @@
   .testimonials-image
     z-index: 2
     position: absolute
-    top: -25%
+    width: 110px
+    top: -55px
     border-radius: 50%
-    width: 27%
     // object-fit: cover
     // margin-bottom: $base-spacing*.5
 
@@ -89,8 +92,8 @@
       padding: $base-spacing*2 $base-spacing*2 $base-spacing $base-spacing*2
 
     .testimonials-image
-      top: -25%
-      width: 18%
+      top: -35.5px
+      width: 75px
 
     .testimonials-info
       margin-top: $base-spacing*.8
@@ -115,3 +118,66 @@
     .row-testimonials:before
       background-position: 50% 45%
       background-size: 23%
+
+@media (max-width: 768px)
+  .testimonials
+    height: 900px
+
+    .columns-testimonials
+      flex-direction: column
+      align-items: center
+
+    .col-testimonials
+      width: 80%
+
+    .columns-testimonials-1
+
+      .testimonials-row-1
+        margin-bottom: 0
+
+      .testimonials-row-2
+        margin-top: 0
+
+    .columns-testimonials-2
+      padding: 0 !important
+      margin: 0
+
+    .columns-testimonials-3
+      margin-bottom: $base-spacing*3.5
+
+    .ramit-sethi
+      margin: $base-spacing*3.5 0 !important
+
+    .columns-testimonials-1, .columns-testimonials-2
+      .row-testimonials
+        padding: $base-spacing*3 $base-spacing*1.8 $base-spacing*1.5 $base-spacing*1.8
+
+      .testimonials-image
+        top: -35.5px
+        width: 75px
+
+      .testimonials-info
+        margin-top: $base-spacing*.6
+
+        p
+          font-size: $base-spacing*.7
+
+        h4
+          margin-top: $base-spacing*.8
+          font-size: $base-spacing*.9
+
+        h5
+          line-height: $base-spacing*.8
+          font-size: $base-spacing*.6
+
+      .row-testimonials:before
+        background-position: 50% 45%
+        background-size: 12.5%
+
+
+
+
+
+
+
+//
