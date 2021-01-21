@@ -62,7 +62,7 @@
     width: 100%
 
 
-@media (max-height: $bc-large)
+// @media (max-height: $bc-large)
   // .benefits
   //   padding: 2% 5%
 
@@ -145,15 +145,19 @@
 
 @media (max-width: 655px)
   .benefits
-    font-size: $base-spacing*.8
+    font-size: $base-spacing*.9
+
+    .specific-benefits
+      h3
+        font-size: $base-spacing*1.7
 
 @media (max-width: 555px)
   .benefits
-    font-size: $base-spacing*.75
+    font-size: $base-spacing*.85
 
 @media (max-width: 500px)
   .benefits
-    font-size: $base-spacing*.7
+    font-size: $base-spacing*.8
     // align-items: baseline
 
     .column-row-1
@@ -191,19 +195,26 @@
 
     .column-row-2
       h3
-        font-size: $base-spacing*2.5
+        font-size: $base-spacing*2.2
+
+    .columns-benefits-3
+      margin-top: 0
+
+@media (max-width: 350px)
+  .benefits
+    height: 700px
+
+    .column-row-2
+      h3
+        font-size: $base-spacing*2
 
 @media (max-width: 300px)
   .benefits
     height: 750px
 
-@media (max-width: 300px)
-  .benefits
-    // height: 750px
-
     .column-row-2
       h3
-        font-size: $base-spacing*2.3
+        // font-size: $base-spacing*2.3
 
 
 

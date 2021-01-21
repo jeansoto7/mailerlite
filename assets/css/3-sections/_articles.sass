@@ -8,6 +8,7 @@
   background: white
   background: rgb(235, 232, 232)
   background: $mailerlite-articles-overlay
+  min-height: 700px
 
   .sign-up-button
     position: relative
@@ -50,7 +51,7 @@
     .articles-copy
       margin: $base-spacing*.3 0
 
-  .col-sm
+  .col-articles
     display: flex
     flex-direction: column
     justify-content: center
@@ -90,7 +91,7 @@
   .white-article
     height: 100%
 
-  .white-article, .columns-articles-2
+  .white-article
     background: $mailer-white
 
   .article-row-1
@@ -137,3 +138,165 @@
         font-weight: 600
         // line-height: $base-spacing*1.2
         font-size: $base-spacing*.9
+
+@media (max-height: 700px)
+  .articles
+    .col-articles
+      height: 80%
+
+@media (max-width: $bp-large)
+  .articles
+    .columns-articles-3, .columns-articles-2
+      font-size: $base-spacing*1.2
+
+@media (max-width: 769px)
+  .articles
+    height: 1000px
+
+    .columns-articles
+      display: flex
+      flex-direction: column-reverse
+      // display: inline-block
+      // justify-content: space-around
+
+    .col-articles
+      width: 100%
+
+    .columns-articles-1
+      height: 200px
+      margin-bottom: $base-spacing*2
+      margin-top: $base-spacing
+      font-size: $base-spacing*.9
+      // border: 2px solid blue
+
+    .hide
+      display: inline
+
+    .article-row-1, .article-row-2
+      padding: 0
+      // margin: 0
+
+    .article-row-1
+      margin: $base-spacing 0
+
+    .article-row-2
+      margin-bottom: $base-spacing*2
+
+    .columns-articles-2
+      // margin-top: $base-spacing
+      // border: 2px solid yellow
+
+    .row-articles
+      // background: pink
+      height: 250px
+
+    .articles-info
+      height: 50%
+
+    .articles-image-box
+      height: 50%
+
+    // .white-article
+      // height: 70%
+
+    .articles-info
+      // margin-top: $base-spacing*.6
+
+      p
+        font-size: $base-spacing*.6
+        margin-top: $base-spacing*.3
+
+      h3
+        margin-top: $base-spacing*.15
+        font-size: $base-spacing
+        font-weight: bold !important
+
+      h5
+        line-height: $base-spacing*.8
+        font-size: $base-spacing*.5
+
+
+@media (max-width: 450px)
+  .articles
+    // font-size: $base-spacing.7
+    height: 1050px
+
+@media (max-width: 500px)
+  .articles
+    height: 1050px
+    .columns-articles-1
+      font-size: $base-spacing*.8
+
+      // h2
+      //   font-size: $base-spacing*2.3
+      //
+      // p
+      //   font-size: $base-spacing*.9
+
+@media (max-width: 400px)
+  .articles
+    height: 1000px
+    .columns-articles-1
+      // font-size: $base-spacing*.7
+
+      h2
+        font-size: $base-spacing*2.5
+
+      p
+        font-size: $base-spacing*1.1
+
+    .articles-info
+      padding: 0 $base-spacing*.5
+
+
+@media (max-width: 350px)
+  .articles
+    height: 1150px
+
+    .row-articles
+      height: 300px
+
+    .columns-articles-1
+      margin-bottom: $base-spacing*1.4
+      margin-top: $base-spacing*2
+
+    .articles-info
+
+      p
+        font-size: $base-spacing*.6
+        margin-top: $base-spacing*.5
+
+      h3
+        font-size: $base-spacing*.8 !important
+        margin-top: $base-spacing*.4
+
+      h5
+        line-height: $base-spacing*.8
+        font-size: $base-spacing*.5
+
+@media (max-width: 265px)
+  .articles
+    font-size: $base-spacing*.9
+
+
+
+
+// @media (max-height: 600px)
+//   .articles
+//     .col-articles
+//       height: 100%
+//
+// @media (max-height: 500px)
+//   .articles
+//     .columns-articles-3, .columns-articles-2
+//       font-size: $base-spacing*.9
+//       line-height: $base-spacing*.85
+//
+//     .articles-image-box
+//       height: 55%
+//
+//     .articles-info
+//       height: 45%
+
+
+//

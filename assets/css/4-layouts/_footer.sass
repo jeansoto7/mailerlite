@@ -18,6 +18,7 @@
     position: absolute
     // padding: 0 $base-spacing/2
     bottom: 5%
+    text-align: center
 
     p, a
       color: $mailer-mid-grey
@@ -64,6 +65,15 @@
         bottom: -$base-spacing*.3
         border-bottom: 2px solid $mailer-white
 
+
+
+@media (max-width: 450px)
+  .footer
+    font-size: $base-spacing*.9
+    .form-title
+      h2
+        line-height: $base-spacing*1.2
+        // font-size: $base-spacing*1.5
 
   // .form-display
   //   input[type="submit"]
