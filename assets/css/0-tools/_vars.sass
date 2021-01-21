@@ -2,8 +2,8 @@
 
 // Mobile Sizes
 // 170px
-$bc-csmall: 14em
-// 200px
+$bc-csmall: 15em
+// 300px
 $bc-bsmall: 19em
 // 350px
 $bc-asmall: 21.875em
@@ -120,9 +120,11 @@ $mc-minlarge: "(min-width: #{$bc-minlarge})"
 
 // Media Queries Tablets
 // -- Ipad
-// $tq-medium: "only (min-device-width: #{$bp-medium}) and (max-device-width: #{$bp-large}) and (orientation:portrait)"
+$tq-small: "only (min-device-width: #{$bp-small}) and (max-device-width: #{$bp-medium}) and (orientation:portrait)"
 // -- Ipad Pro
 $tq-medium: "only (min-device-width: #{$bp-medium}) and (max-device-width: #{$bp-large}) and (orientation:portrait)"
+// landscape
+$tq-medium-l: "only (min-device-width: #{$bp-medium}) and (max-device-width: #{$bp-large}) and (orientation:landscape)"
 // -- Kindle Fire HD
 $tq-large: "only (min-device-width: #{$bp-mlarge}) and (max-device-width: #{$bp-xxlarge}) and (orientation:portrait)"
 

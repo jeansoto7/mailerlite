@@ -8,14 +8,14 @@ html, body
 html
   height: -webkit-fill-available
   overflow-y: scroll
-  scroll-behavior: smooth
+  // scroll-behavior: smooth
 
 body
   // font-size: $base-font-size*0.9
   // min-height: 100vh
   background: $mailer-white
   min-height: -webkit-fill-available
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))
+  // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))
   line-height: $base-line-height
   font-family: Montserrat, sans-serif
   -webkit-font-smoothing: antialiased
@@ -30,11 +30,11 @@ body
     line-height: $base-line-height*1.1
 
   @media #{$mq-medium}
-    // font-size: $base-font-size*0.9
+    font-size: $base-font-size*0.9
     // line-height: $base-line-height*1.2
 
   @media #{$mq-large}
-    // font-size: $base-font-size*1.1
+    font-size: $base-font-size*1.1
 
   @media #{$mq-mlarge}
     font-size: $base-font-size*1.2
@@ -48,8 +48,8 @@ body
   @media #{$mq-xxxlarge}
     font-size: $base-font-size*2.4
 
-  @media #{$tq-large}
-    font-size: $base-font-size*2
+  // @media #{$tq-large}
+  //   font-size: $base-font-size*2
 
   // @media #{$mc-large}
     // font-size: $base-font-size*1.2

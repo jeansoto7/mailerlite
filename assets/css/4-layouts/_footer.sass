@@ -9,13 +9,14 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  padding: 5%
 
   // .subscribe-form
   //   width: 50%
 
   .copyright
     position: absolute
-    padding: 0 $base-spacing/2
+    // padding: 0 $base-spacing/2
     bottom: 5%
 
     p, a
@@ -33,12 +34,12 @@
 
     h2, h3, a
       color: $mailer-white
+      text-align: center
 
     h2
       font-size: $base-spacing*1.7
       font-weight: 700
-      text-align: center
-      margin: 0 $base-spacing/2 $base-spacing/4 $base-spacing/2
+      margin: 0 0 $base-spacing*.4 0
       // margin-bottom: $base-spacing/2
 
     h3
@@ -85,41 +86,41 @@
   //       &:first-child
   //         -webkit-text-stroke: 0.3px $mailer-dark-grey
 
-@media #{$mq-xlarge}
-  .footer
-    height: 350px
-
-@media #{$mq-xxlarge}
-  .footer
-    height: 400px
-
-@media #{$mq-xxxlarge}
-  .footer
-    height: 550px
-
-@media (max-width: 48.125em), #{$tq-medium}, #{$tq-large}
-  .footer
-    // .subscribe-button
-    //   width: 20%
-    //
-    // .subscribe-form
-    //   width: 90%
-
-@media #{$mc-large}
-  .footer
-    height: 400px
-    // .subscribe-button
-    //   width: 30%
-    // .group-text
-    //   width: 50%
-
-    .copyright
-      text-align: center
-
-@media #{$mc-medium}
-  .footer
-    height: 500px
-    text-align: center
+// @media #{$mq-xlarge}
+//   .footer
+//     height: 350px
+//
+// @media #{$mq-xxlarge}
+//   .footer
+//     height: 400px
+//
+// @media #{$mq-xxxlarge}
+//   .footer
+//     height: 550px
+//
+// @media (max-width: 48.125em), #{$tq-medium}, #{$tq-large}
+//   .footer
+//     // .subscribe-button
+//     //   width: 20%
+//     //
+//     // .subscribe-form
+//     //   width: 90%
+//
+// @media #{$mc-large}
+//   .footer
+//     height: 400px
+//     // .subscribe-button
+//     //   width: 30%
+//     // .group-text
+//     //   width: 50%
+//
+//     .copyright
+//       text-align: center
+//
+// @media #{$mc-medium}
+//   .footer
+//     height: 500px
+//     text-align: center
 
     // .subscribe-form
     //   width: 100%

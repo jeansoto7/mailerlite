@@ -3,61 +3,207 @@
   height: 100vh
   display: flex
   padding: 5% 5%
-  // padding: 0
-  background: $mailer-green
   background: $mailer-mid-grey
   overflow: hidden
   // z-index: -1
 
+  // .send-top-benefits
+  //   display: flex
+
   .columns-benefits
     z-index: 2
     margin: 0
-    // padding: 2%
     width: 100%
+    display: flex
 
-    .col-sm
-      display: flex
-      flex-direction: column
-      justify-content: center
-      padding: 0
-      // border: 2px solid blue
-      // width: 33.4%
+  .each-column
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0
+    width: calc(100%/3)
+
+  .columns-benefits-1, .columns-benefits-2
+    .benefits-info
+      width: 92%
 
   .benefits-info
-    width: 92%
+    // width: 92%
     padding-left: $base-spacing/2
-    // border: 2px solid blue
-    // border: 2px solid blue
 
     h3
       line-height: $base-spacing*1.2
       font-weight: 600
 
+  // .color-change
+  //   font-weight: bold
+    // color: white
+
   .row-benefits
     display: flex
 
   .column-row-1
-    // margin-right: $base-spacing*2
     margin: $base-spacing $base-spacing $base-spacing 0
 
+    h3
+      font-size: $base-spacing*1.8
+
   .column-row-2
-    // margin-left: $base-spacing
     margin: $base-spacing 0 $base-spacing $base-spacing
 
     h3
       font-weight: bold
       font-size: $base-spacing*2.8
 
-  // .column-row-2
-  //   margin: 0 $base-spacing
-
   .little-icon
     width: 8%
-    // margin-right: $base-spacing/2
 
   .benefits-icon
-    // width: 10%
-    // height: 25%
-    // height: auto
     width: 100%
+
+
+@media (max-height: $bc-large)
+  // .benefits
+  //   padding: 2% 5%
+
+@media (max-height: 600px)
+  .benefits
+    font-size: $base-spacing*.9
+
+@media (max-height: 550px)
+  .benefits
+    // font-size: $base-spacing*.85
+    .columns-benefits-3
+      font-size: $base-spacing*.9
+
+@media (max-height: 500px)
+  .benefits
+    font-size: $base-spacing*.85
+    // font-size: $base-spacing*.85
+
+
+@media (max-width: $bp-medium)
+  .benefits
+    // font-size: $base-spacing*.85
+
+    .column-row-1
+      h3
+        font-size: $base-spacing*2
+
+    // .column-row-2
+    //   h3
+    //     font-size: $base-spacing*2.6
+
+    .little-icon
+      width: 10%
+
+@media (max-width: $bc-xxxxlarge)
+  .benefits
+    // font-size: $base-spacing*.9
+
+    .column-row-1
+      h3
+
+@media (max-width: 768px)
+  .benefits
+    // flex-wrap: wrap
+
+    .columns-benefits
+      flex-wrap: wrap
+      // align-items: baseline
+
+    // .benefits-info
+    //   width: 100%
+
+    .column-row-1, .column-row-2
+      margin: 0
+      margin-bottom: $base-spacing
+
+    .columns-benefits-3
+      justify-content: flex-start
+      margin: 0
+      margin-top: $base-spacing
+      // text-align: center
+
+    .columns-benefits-1, .columns-benefits-2
+      width: 50%
+      justify-content: flex-end
+      // margin-bottom: $base-spacing
+
+    .columns-benefits-1
+      padding-right: $base-spacing*.5
+
+    .columns-benefits-2
+      padding-left: $base-spacing*.5
+
+    .columns-benefits-3
+      width: 100%
+
+@media (max-width: 655px)
+  .benefits
+    font-size: $base-spacing*.8
+
+@media (max-width: 555px)
+  .benefits
+    font-size: $base-spacing*.75
+
+@media (max-width: 500px)
+  .benefits
+    font-size: $base-spacing*.7
+    // align-items: baseline
+
+    .column-row-1
+      h3
+        font-size: $base-spacing*1.8
+      p
+        // font-size: $base-spacing*.9
+
+    .columns-benefits-3
+      h3
+
+@media (max-width: 450px)
+  .benefits
+    // height: 600px
+
+    .columns-benefits-1, .columns-benefits-2
+      width: 100%
+      // border: 2px solid blue
+      // display: block
+
+    .columns-benefits-1
+      padding-right: 0
+
+    .columns-benefits-2
+      padding-right: 0
+      justify-content: flex-start
+
+    .little-icon
+      width: 6%
+
+@media (max-width: 400px)
+  .benefits
+    height: 650px
     // border: 2px solid blue
+
+    .column-row-2
+      h3
+        font-size: $base-spacing*2.5
+
+@media (max-width: 300px)
+  .benefits
+    height: 750px
+
+@media (max-width: 300px)
+  .benefits
+    // height: 750px
+
+    .column-row-2
+      h3
+        font-size: $base-spacing*2.3
+
+
+
+
+
+
+////
